@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="header">
+        <h1>Website Data Sekolah</h1>
+        <nav>
+            <a href="tambah.html">Tambah Data</a>
+            <a href="lihat.php">Lihat Data</a>
+        </nav>
+    </div>
+  <h2 class="h2">Tambah Data Siswa </h2>
+  <div class="form-container">
+  <form action="tambah.php" method="post">
+
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" name="nama" placeholder="Masukkan Nama" required>
+          
+          <label for="nis">NIS/NIP</label>
+          <input type="text" id="nis" name="nis"  placeholder="Masukkan NIS/NIP" required>
+
+          <label for="kelas">Kelas:</label>
+          <select id="kelas" name="kelas" required>
+              <option value="pilih">Kelas:</option>
+              <option value="guru">10</option>
+              <option value="siswa">11</option>
+            </select> 
+
+            <label for="jenis_kelamin">Jenis Kelamin:</label>
+            <select id="jenis_kelamin" name="jenis_kelamin" required>
+              <option value="pilih">Pilih Jenis Kelamin:</option>
+              <option value="laki">Laki-Laki</option>
+              <option value="cewe">Perempuan</option>
+            </select>
+
+          <td><label for="jurusan">Jurusan:</label>
+          <input type="text" id="jurusan" name="jurusan"  placeholder="Masukkan Jurusan" required></td>
+          
+
+          <td>
+            <label for="sebagai">Sebagai:</label>
+            <select id="sebagai" name="sebagai" required>
+              <option value="pilih">Sebagai:</option>
+              <option value="guru">Guru</option>
+              <option value="siswa">Siswa</option>
+            </select>
+          </td>
+      </tr>
+<br>
+      <button type="submit">Tambahkan Data</button>
+    </div>
+</form>
+    <div class="footer">
+        <p></p>
+    </div>
+</body>
+</html>
